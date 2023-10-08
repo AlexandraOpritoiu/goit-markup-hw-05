@@ -13,6 +13,15 @@
 </head>
 
 <body>
+  <!--Buton-fereastra-modala-->
+  <div class="modal is-hidden" data-modal>
+    <div class="modal-content">
+      <svg class="modal-btn" data-modal-close>
+        <use href="./symbol-defs.svg#icon-close-black-18dp-2-11" />
+      </svg>
+    </div>
+  </div>
+
   <header class="header-section">
     <div class="topline-container">
       <a class="logo" href="#">
@@ -54,8 +63,13 @@
   <main>
     <section class="first-section">
       <h1>EFFECTIVE SOLUTIONS FOR <br />YOUR BUSINESS</h1>
-      <button class="btn" type="button">Request our service</button>
+      <button data-modal-open class="btn" type="button">Request our
+        service</button>
     </section>
+
+
+
+
 
     <div class="second-section">
       <ul>
@@ -343,15 +357,10 @@
 
   </footer>
 
-  <!--Buton-fereastra-modala-->
-  <div class="modal" data-modal>
-    <div class="modal-content">
-      <button class="close-btn" data-modal-close>X</button>
-    </div>
-  </div>
 
-  <script src="./js/modal.js">
-  </script>
+
+
+  <script src="./js/modal.js"></script>
 </body>
 
 </html>
